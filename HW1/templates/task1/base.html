@@ -1,0 +1,130 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Task1</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+
+      <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-0">
+      <div class="d-flex container-fluid justify-content-center align-items-center text-light">
+            AskPupkin
+      </div>
+  </nav>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-auto" href="#">Task 1</a>
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-close"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-solid fa-home"></i>
+          </a>
+        </li>
+      </ul>
+      <form class="d-flex container-fluid">
+        <input class="form-control me-2" type="search" placeholder="URL" aria-label="URL">
+      </form>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-search"></i></button>
+      </form>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="bg-light p-5 rounded">
+  <div class = "row g-3">
+  <div class="col-sm-2">
+        <h4>Ask Pupkin</h4>
+  </div>
+  <div class="col-sm-6">
+        <input type="search" class="form-control" id="idSearch" placeholder="Search">
+  </div>
+  <div class="col-sm">
+      <button type="button" class="btn btn-outline-primary">Ask!</button>
+  </div>
+  <div class="col-sm">
+      <span>
+        <a class="link-opacity-10-hover me-2" href="#">settings</a>
+        <a class="link-opacity-10-hover" href="#">log out</a>
+      </span>
+  </div>
+</div>
+
+<hr class="border-2 border-top" bg-dark />
+      <div class="row g-3">
+          <div class="col-sm-10">
+           {% block content %}
+           {% endblock %}
+          </div>
+          <div class="col-sm-2">
+            <h4>Popular Tags</h4>
+                <ul style="list-style-type:none;">
+                    <li ><a class="link-opacity-10-hover" href="#">perl</a></li>
+                    <li ><a class="link-opacity-10-hover" href="#">Python</a></li>
+                    <li ><a class="link-opacity-10-hover" href="#">TechnoPark</a></li>
+                    <li><a class="link-opacity-10-hover" href="#">MySQL</a></li>
+                </ul>
+            <h4>Best Members</h4>
+                <ul style="list-style-type:none;">
+                        <li ><a class="link-opacity-10-hover" href="#">Mr Freeman</a></li>
+                        <li ><a class="link-opacity-10-hover" href="#">Dr House</a></li>
+                        <li ><a class="link-opacity-10-hover" href="#">Bender</a></li>
+                        <li><a class="link-opacity-10-hover" href="#">Queen Victoria</a></li>
+                </ul>
+          </div>
+      </div>
+  </div>
+</main>
+  </body>
+</html>
+
+

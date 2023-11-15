@@ -1,0 +1,105 @@
+{% extends "task1/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="row g-3">
+    <div class="col-sm-3">
+        <h4>New Questions</h4>
+    </div>
+    <div class = "col-sm">
+        <a class="link-opacity-10-hover" href="#">Hot questions</a>
+    </div>
+</div>
+<div class="row g-3">
+    <div class="col-sm-10">
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="static/tp.svg"  class="rounded mx-auto d-block" alt="...">
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="col-sm-9">
+                        <h5 class="card-title"><a class="link-opacity-10-hover" href="#">How to build a moon park?</a></h5>
+                        <p class="card-text">Guys I have trouble with a moon park...</p>
+                        <div class = "row">
+                            <div class="col-sm-3">
+                                <a class="link-opacity-10-hover me-2" href="#">Answer (3)</a>
+                            </div>
+                            <div class="col-sm-3">
+                                Tags:
+                            </div>
+                            <div class="col-sm-6">
+                                <span>
+                                    <a class="link-opacity-10-hover me-2" href="#">black_jack</a>
+                                    <a class="link-opacity-10-hover me-2" href="#">bender</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="{% static "tp.svg" %}"  class="rounded mx-auto d-block" alt="...">
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="col-sm-9">
+                        <h5 class="card-title"><a class="link-opacity-10-hover" href="#">How to build a moon park?</a></h5>
+                        <p class="card-text">Guys I have trouble with a moon park...</p>
+                        <div class = "row">
+                            <div class="col-sm-3">
+                                <a class="link-opacity-10-hover me-2" href="#">Answer (3)</a>
+                            </div>
+                            <div class="col-sm-3">
+                                Tags:
+                            </div>
+                            <div class="col-sm-6">
+                                <span>
+                                    <a class="link-opacity-10-hover me-2" href="#">black_jack</a>
+                                    <a class="link-opacity-10-hover me-2" href="#">bender</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="static/tp.svg"  class="rounded mx-auto d-block" alt="...">
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="col-sm-9">
+                        <h5 class="card-title"><a class="link-opacity-10-hover" href="#">How to build a moon park?</a></h5>
+                        <p class="card-text">Guys I have trouble with a moon park...</p>
+                        <div class = "row">
+                            <div class="col-sm-3">
+                                <a class="link-opacity-10-hover me-2" href="#">Answer (3)</a>
+                            </div>
+                            <div class="col-sm-3">
+                                Tags:
+                            </div>
+                            <div class="col-sm-6">
+                                <span>
+                                    <a class="link-opacity-10-hover me-2" href="#">black_jack</a>
+                                    <a class="link-opacity-10-hover me-2" href="#">bender</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
